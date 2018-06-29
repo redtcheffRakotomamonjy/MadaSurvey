@@ -1,0 +1,25 @@
+<?php
+  session_start();
+  $name=$_SESSION['name'];
+ ?>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/fond.css">
+    <link rel="stylesheet" type="text/css" href="../css/questionnaire.css">
+  </head>
+
+  <body>
+    <p>
+      <h4> L'équipe de <strong> MADA Survey </strong> vous remercie de votre particiption. A bientôt </h4>
+    </p>
+
+    <form action="logout.php" method="post">
+      
+      <input type="submit" name="btn_logout" value="Log out" class="suivant">
+    </form>
+
+  </body>
+</html>
